@@ -185,7 +185,7 @@
                   fi
 
                   if [ ! -f "${userDir}/models/Stable-diffusion/sd-v1-4.ckpt" ]; then
-                    ${pkgs.wget} "https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt" \
+                    ${pkgs.wget}/bin/wget "https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt" \
                       -O "${userDir}/models/Stable-diffusion/sd-v1-4.ckpt"
                   fi
 
