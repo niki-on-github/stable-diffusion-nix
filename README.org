@@ -8,6 +8,12 @@ Run the webui:
 nix run github:maxaudron/stable-diffusion-nix#automatic1111
 #+end_src
 
+or run local from cloned repo:
+
+#+begin_src sh
+nix run .#automatic1111
+#+end_src
+
 You can accept the following prompts to use the nix cache i have provided.
 
 By default all user data is saved in ~$HOME/stable-diffusion~. You will have to
