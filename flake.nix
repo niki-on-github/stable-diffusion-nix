@@ -185,8 +185,8 @@
                   fi
 
                   if [ ! -f "${userDir}/models/Stable-diffusion/sd-v1-4.ckpt" ]; then
-                    ${self.packages.${system}.wget} "https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt" \
-                      -O "${userDir}/models/Stable-diffusion/sd-v1-4.ckpt"
+                    eval "${self.packages.${system}.wget} \"https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt\" \
+                      -O \"${userDir}/models/Stable-diffusion/sd-v1-4.ckpt\"
                   fi
 
                   cd ${self.packages.${system}.automatic1111}/${pkgs.python310Packages.python.sitePackages}
