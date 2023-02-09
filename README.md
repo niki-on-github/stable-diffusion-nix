@@ -16,7 +16,7 @@ nix run .#automatic1111
 
 You can accept the following prompts to use the nix cache from [`maxaudron`](https://github.com/maxaudron/stable-diffusion-nix).
 
-You will have to set the output directory in the webui settings after first starting it, or it will crash with OSError: [Errno 30] Read-only file system: 'outputs'. Simply change all output directories in Setting : Paths for saving to apsolute paths e.g. in your home directory.
+You will have to set the output directory in the webui settings after first starting it, or it will crash with `OSError: [Errno 30] Read-only file system: 'outputs'`. Simply change all output directories in `Setting : Paths` for saving to absolute paths e.g. your home directory.
 
 ## Public forward webui
 
