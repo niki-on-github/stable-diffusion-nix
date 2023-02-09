@@ -1,6 +1,6 @@
 # NIX Stable Diffusion WEBUI
 
-A fully reproducible nix flake for [automatic1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui/)](automatic1111/stable-diffusion-webui) with CUDA support.
+A fully reproducible nix flake for [automatic1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui/) with CUDA support.
 
 Run the webui:
 
@@ -25,4 +25,3 @@ Simple way to public forward the local webui to port 8001:
 ```bash
 nix-shell -p socat --run "socat tcp-listen:8001,reuseaddr,fork tcp:localhost:7860"
 ```
-
