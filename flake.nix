@@ -190,7 +190,7 @@
                   fi
 
                   mkdir -p ${userDir}/tmp
-                  cp -rf ${self.packages.${system}.automatic1111}/${pkgs.python310Packages.python.sitePackages}/ ${userDir}/tmp
+                  cp -rf ${self.packages.${system}.automatic1111}/${pkgs.python310Packages.python.sitePackages}/* ${userDir}/tmp
                   cd ${userDir}/tmp
 
                   ${self.packages.${system}.automatic1111}/bin/run \
