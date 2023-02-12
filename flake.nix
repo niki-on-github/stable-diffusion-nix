@@ -189,7 +189,7 @@
                       -O "${userDir}/models/Stable-diffusion/sd-v1-4.ckpt"
                   fi
 
-                  cd ${self.packages.${system}.automatic1111}/${pkgs.python310Packages.python.sitePackages}
+                  cd ${userDir}/models
 
                   ${self.packages.${system}.automatic1111}/bin/run \
                     --data-dir=${userDir} \
